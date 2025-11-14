@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Home, Car, Truck, Star, CheckCircle } from "lucide-react";
+import { Home, Car, Truck, Bike, Star, CheckCircle } from "lucide-react";
 
 const ContemplatedCards = () => {
   const cards = [
@@ -12,10 +12,17 @@ const ContemplatedCards = () => {
     },
     {
       icon: Car,
-      title: "Veículos",
+      title: "Carros",
       description: "Carros 0km e seminovos disponíveis",
       value: "A partir de R$ 40.000",
       benefits: ["Escolha sua marca", "Sem burocracia", "Liberação imediata"],
+    },
+    {
+      icon: Bike,
+      title: "Motos",
+      description: "Motos 0km e seminovas disponíveis",
+      value: "A partir de R$ 15.000",
+      benefits: ["Várias marcas", "Processo rápido", "Aprovação facilitada"],
     },
     {
       icon: Truck,
@@ -42,7 +49,7 @@ const ContemplatedCards = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {cards.map((card, index) => (
             <div
               key={index}
