@@ -16,16 +16,16 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-2 text-sm font-semibold shadow-lg text-white">
-              <Zap className="w-4 h-4" />
-              <span>Tecnologia que transforma negócios!</span>
+            <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
+              <Zap className="w-4 h-4 text-white" />
+              <span className="text-white">Tecnologia que transforma negócios!</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg text-white">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
               Realize seus objetivos com o consórcio certo
             </h1>
             
-            <p className="text-xl drop-shadow-md text-white">
+            <p className="text-xl text-white" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
               Simule agora e descubra como conquistar seu imóvel, veículo ou caminhão de forma inteligente e planejada.
             </p>
             
@@ -54,15 +54,15 @@ const Hero = () => {
           
           <div className="grid grid-cols-1 gap-6">
             <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border-2 border-white/30 hover:bg-white/25 transition-all shadow-xl">
-              <Shield className="w-10 h-10 text-white mb-4 drop-shadow-md" />
-              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-md">Segurança garantida</h3>
-              <p className="text-white drop-shadow-sm">Trabalhamos com as maiores administradoras do Brasil</p>
+              <Shield className="w-10 h-10 text-white mb-4" style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))' }} />
+              <h3 className="text-xl font-bold text-white mb-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>Segurança garantida</h3>
+              <p className="text-white" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>Trabalhamos com as maiores administradoras do Brasil</p>
             </div>
             
             <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border-2 border-white/30 hover:bg-white/25 transition-all shadow-xl">
-              <TrendingUp className="w-10 h-10 text-white mb-4 drop-shadow-md" />
-              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-md">Melhor investimento</h3>
-              <p className="text-white drop-shadow-sm">Parcelas que cabem no seu bolso com previsibilidade total</p>
+              <TrendingUp className="w-10 h-10 text-white mb-4" style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))' }} />
+              <h3 className="text-xl font-bold text-white mb-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>Melhor investimento</h3>
+              <p className="text-white" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>Parcelas que cabem no seu bolso com previsibilidade total</p>
             </div>
           </div>
         </div>
