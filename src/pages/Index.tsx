@@ -4,6 +4,7 @@ import ConsultantCTA from "@/components/ConsultantCTA";
 import ConsortiumShowcase from "@/components/ConsortiumShowcase";
 import Simulator from "@/components/Simulator";
 import About from "@/components/About";
+import Partners from "@/components/Partners";
 import ContemplatedCards from "@/components/ContemplatedCards";
 import Consultant from "@/components/Consultant";
 import Contact from "@/components/Contact";
@@ -20,6 +21,7 @@ const Index = () => {
         <ConsortiumShowcase />
         <Simulator />
         <About />
+        <Partners />
         <ContemplatedCards />
         <Consultant />
         <Contact />

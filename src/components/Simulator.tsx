@@ -10,6 +10,7 @@ const Simulator = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     type: "",
+    customType: "",
     value: "",
     installments: "",
     name: "",
@@ -49,7 +50,8 @@ const Simulator = () => {
       return;
     }
 
-    const message = `Olá! Meu nome é ${formData.name}.%0A%0ASimulação de Consórcio:%0ATipo: ${formData.type}%0AValor: R$ ${parseFloat(formData.value).toLocaleString('pt-BR')}%0AParcelas: ${formData.installments}x%0AValor da parcela: R$ ${result.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}%0A%0AGostaria de mais informações!`;
+    const consortiumType = formData.type === "outro" ? formData.customType : formData.type;
+    const message = `Olá! Meu nome é ${formData.name}.%0A%0ASimulação de Consórcio:%0ATipo: ${consortiumType}%0AValor: R$ ${parseFloat(formData.value).toLocaleString('pt-BR')}%0AParcelas: ${formData.installments}x%0AValor da parcela: R$ ${result.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}%0A%0AGostaria de mais informações!`;
     
     window.open(`https://wa.me/5547989165481?text=${message}`, "_blank");
     
@@ -79,17 +81,32 @@ const Simulator = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <Label htmlFor="type">Tipo de Consórcio</Label>
-              <Select value={formData.type} onValueChange={(value) => setFormData({ ...formData, type: value })}>
+              <Select value={formData.type} onValueChange={(value) => setFormData({ ...formData, type: value, customType: "" })}>
                 <SelectTrigger>
                   <SelectValue placeholder="Selecione" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="imovel">Imóvel</SelectItem>
-                  <SelectItem value="veiculo">Veículo</SelectItem>
-                  <SelectItem value="caminhao">Caminhão</SelectItem>
+                  <SelectItem value="imovel">Consórcio de Imóveis</SelectItem>
+                  <SelectItem value="carro">Consórcio de Carros</SelectItem>
+                  <SelectItem value="moto">Consórcio de Motos</SelectItem>
+                  <SelectItem value="pesado">Consórcio de Pesados</SelectItem>
+                  <SelectItem value="servico">Consórcio de Serviços</SelectItem>
+                  <SelectItem value="outro">Outro</SelectItem>
                 </SelectContent>
               </Select>
             </div>
+
+            {formData.type === "outro" && (
+              <div className="md:col-span-2">
+                <Label htmlFor="customType">Especifique o tipo de consórcio</Label>
+                <Input
+                  id="customType"
+                  placeholder="Digite para que você deseja o consórcio"
+                  value={formData.customType}
+                  onChange={(e) => setFormData({ ...formData, customType: e.target.value })}
+                />
+              </div>
+            )}
 
             <div>
               <Label htmlFor="value">Valor do Bem (R$)</Label>
