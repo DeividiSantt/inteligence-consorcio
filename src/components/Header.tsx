@@ -21,6 +21,7 @@ const Header = () => {
             <div className="flex flex-col">
               <span className="text-xl font-bold text-primary">Intelligence</span>
               <span className="text-sm font-semibold text-secondary">Consórcio</span>
+              <span className="text-xs text-muted-foreground">turn2c</span>
             </div>
           </div>
           
