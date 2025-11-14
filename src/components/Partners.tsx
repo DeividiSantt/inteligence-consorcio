@@ -44,12 +44,12 @@ const Partners = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-xl transition-all flex items-center justify-center h-32"
+              className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-2xl transition-all flex items-center justify-center h-32 group"
             >
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="max-w-full max-h-20 object-contain grayscale hover:grayscale-0 transition-all"
+                className="max-w-full max-h-20 object-contain transition-transform group-hover:scale-110"
               />
             </div>
           ))}
