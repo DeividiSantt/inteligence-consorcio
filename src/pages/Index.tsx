@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ConsultantCTA from "@/components/ConsultantCTA";
+import ConsortiumShowcase from "@/components/ConsortiumShowcase";
 import Simulator from "@/components/Simulator";
 import About from "@/components/About";
 import ContemplatedCards from "@/components/ContemplatedCards";
@@ -16,6 +17,7 @@ const Index = () => {
       <main>
         <Hero />
         <ConsultantCTA />
+        <ConsortiumShowcase />
         <Simulator />
         <About />
         <ContemplatedCards />

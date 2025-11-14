@@ -10,19 +10,18 @@ const Consultant = () => {
             <div className="text-white space-y-6">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm">
                 <MessageCircle className="w-4 h-4" />
-                CONSULTORIA ESPECIALIZADA
+                ATENDIMENTO ESPECIALIZADO
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold">
-                Fale com nosso consultor
+                Fale com nossos consultores
               </h2>
               
+              <p className="text-white/90 text-lg">
+                Nossa equipe está pronta para ajudar você a realizar seus objetivos através do consórcio ideal.
+              </p>
+              
               <div className="space-y-4">
-                <div>
-                  <p className="text-white/80 text-sm mb-1">Consultor de Vendas</p>
-                  <p className="text-2xl font-bold">Cleyson Araújo</p>
-                </div>
-
                 <div className="space-y-3 pt-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
@@ -68,7 +67,7 @@ const Consultant = () => {
                   size="lg"
                   onClick={() => {
                     window.open(
-                      "https://wa.me/5547989165481?text=Olá!%20Gostaria%20de%20falar%20com%20o%20consultor%20Cleyson.",
+                      "https://wa.me/5547989165481?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20consórcio.",
                       "_blank"
                     );
                   }}
