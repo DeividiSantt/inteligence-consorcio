@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logoFull} alt="Intelligence Consórcio" className="h-12 mb-4 brightness-0 invert" />
+            <img src={logoFull} alt="Intelligence Consórcio" className="h-12 mb-4" />
             <p className="text-white/80 mb-4">
               Tecnologia que transforma negócios. Realizando sonhos através de consórcios inteligentes.
             </p>
