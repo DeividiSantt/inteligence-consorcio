@@ -15,17 +15,17 @@ const Hero = () => {
       
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-primary-foreground space-y-6">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-2 text-sm font-semibold shadow-lg text-white">
               <Zap className="w-4 h-4" />
               <span>Tecnologia que transforma negócios!</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg text-white">
               Realize seus objetivos com o consórcio certo
             </h1>
             
-            <p className="text-xl drop-shadow-md">
+            <p className="text-xl drop-shadow-md text-white">
               Simule agora e descubra como conquistar seu imóvel, veículo ou caminhão de forma inteligente e planejada.
             </p>
             
@@ -54,15 +54,15 @@ const Hero = () => {
           
           <div className="grid grid-cols-1 gap-6">
             <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border-2 border-white/30 hover:bg-white/25 transition-all shadow-xl">
-              <Shield className="w-10 h-10 text-primary-foreground mb-4 drop-shadow-md" />
-              <h3 className="text-xl font-bold text-primary-foreground mb-2 drop-shadow-md">Segurança garantida</h3>
-              <p className="text-primary-foreground/95 drop-shadow-sm">Trabalhamos com as maiores administradoras do Brasil</p>
+              <Shield className="w-10 h-10 text-white mb-4 drop-shadow-md" />
+              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-md">Segurança garantida</h3>
+              <p className="text-white drop-shadow-sm">Trabalhamos com as maiores administradoras do Brasil</p>
             </div>
             
             <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border-2 border-white/30 hover:bg-white/25 transition-all shadow-xl">
-              <TrendingUp className="w-10 h-10 text-primary-foreground mb-4 drop-shadow-md" />
-              <h3 className="text-xl font-bold text-primary-foreground mb-2 drop-shadow-md">Melhor investimento</h3>
-              <p className="text-primary-foreground/95 drop-shadow-sm">Parcelas que cabem no seu bolso com previsibilidade total</p>
+              <TrendingUp className="w-10 h-10 text-white mb-4 drop-shadow-md" />
+              <h3 className="text-xl font-bold text-white mb-2 drop-shadow-md">Melhor investimento</h3>
+              <p className="text-white drop-shadow-sm">Parcelas que cabem no seu bolso com previsibilidade total</p>
             </div>
           </div>
         </div>
