@@ -16,16 +16,16 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
-              <Zap className="w-4 h-4 text-white" />
-              <span className="text-white">Tecnologia que transforma negócios!</span>
+            <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
+              <Zap className="w-4 h-4 text-accent" />
+              <span className="text-primary">Tecnologia que transforma negócios!</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-gray-900" style={{ textShadow: '2px 2px 4px rgba(255,255,255,0.5)' }}>
               Realize seus objetivos com o consórcio certo
             </h1>
             
-            <p className="text-xl text-white" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
+            <p className="text-xl text-gray-800" style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.5)' }}>
               Simule agora e descubra como conquistar seu imóvel, veículo ou caminhão de forma inteligente e planejada.
             </p>
             
@@ -53,16 +53,16 @@ const Hero = () => {
           </div>
           
           <div className="grid grid-cols-1 gap-6">
-            <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border-2 border-white/30 hover:bg-white/25 transition-all shadow-xl">
-              <Shield className="w-10 h-10 text-white mb-4" style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))' }} />
-              <h3 className="text-xl font-bold text-white mb-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>Segurança garantida</h3>
-              <p className="text-white" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>Trabalhamos com as maiores administradoras do Brasil</p>
+            <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 border-2 border-white hover:bg-white transition-all shadow-xl">
+              <Shield className="w-10 h-10 text-primary mb-4" />
+              <h3 className="text-xl font-bold text-primary mb-2">Segurança garantida</h3>
+              <p className="text-gray-700">Trabalhamos com as maiores administradoras do Brasil</p>
             </div>
             
-            <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border-2 border-white/30 hover:bg-white/25 transition-all shadow-xl">
-              <TrendingUp className="w-10 h-10 text-white mb-4" style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))' }} />
-              <h3 className="text-xl font-bold text-white mb-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>Melhor investimento</h3>
-              <p className="text-white" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>Parcelas que cabem no seu bolso com previsibilidade total</p>
+            <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 border-2 border-white hover:bg-white transition-all shadow-xl">
+              <TrendingUp className="w-10 h-10 text-secondary mb-4" />
+              <h3 className="text-xl font-bold text-secondary mb-2">Melhor investimento</h3>
+              <p className="text-gray-700">Parcelas que cabem no seu bolso com previsibilidade total</p>
             </div>
           </div>
         </div>
