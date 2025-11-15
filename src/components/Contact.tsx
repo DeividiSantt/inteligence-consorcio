@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl px-4 md:px-0">
         <div className="text-center mb-8 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-semibold mb-4">
             <Send className="w-4 h-4" />
@@ -55,8 +55,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="w-full">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="contact-name">Nome completo *</Label>
@@ -112,7 +112,7 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 w-full">
             <div className="bg-card rounded-2xl p-6 shadow-md border border-border">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
