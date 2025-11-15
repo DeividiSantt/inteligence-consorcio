@@ -6,7 +6,7 @@ const Consultant = () => {
     <section className="py-12 md:py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="bg-gradient-to-br from-primary via-primary/95 to-secondary rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-12">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-12 items-start">
             <div className="text-white space-y-6">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm">
                 <MessageCircle className="w-4 h-4" />
@@ -56,8 +56,8 @@ const Consultant = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-5 md:p-6 border border-white/20">
+            <div className="flex flex-col justify-center space-y-4 w-full">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-5 md:p-6 border border-white/20 w-full">
                 <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Atendimento Personalizado</h3>
                 <p className="text-white/80 mb-3 md:mb-4 text-sm md:text-base">
                   Tire suas dúvidas e receba orientação especializada para escolher o melhor consórcio para você.
@@ -77,14 +77,13 @@ const Consultant = () => {
                 </Button>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-5 md:p-6 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-5 md:p-6 border border-white/20 w-full">
                 <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Envie um E-mail</h3>
                 <p className="text-white/80 mb-3 md:mb-4 text-sm md:text-base">
                   Prefere se comunicar por e-mail? Envie sua mensagem e retornaremos em breve.
                 </p>
                 <Button
-                  variant="outline"
-                  className="w-full bg-white/10 border-white/30 text-white hover:bg-white/20"
+                  className="w-full bg-white text-primary hover:bg-white/90"
                   size="lg"
                   onClick={() => {
                     window.location.href = "mailto:intelligenceconsorcio@gmail.com";
