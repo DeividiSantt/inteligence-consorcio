@@ -40,22 +40,22 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-12 md:py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-semibold mb-4">
             <Send className="w-4 h-4" />
             CONTATO
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3 md:mb-4">
             Entre em contato conosco
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground">
             Estamos prontos para ajudar você a realizar seus objetivos
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -156,7 +156,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-2">E-mail</h3>
-                  <p className="text-muted-foreground break-all">
+                  <p className="text-muted-foreground break-words text-sm md:text-base">
                     intelligenceconsorcio@gmail.com
                   </p>
                 </div>
