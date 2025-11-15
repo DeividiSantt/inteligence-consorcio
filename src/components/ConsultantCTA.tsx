@@ -18,19 +18,21 @@ const ConsultantCTA = () => {
           Tire suas dúvidas sobre consórcio de imóveis, carros, motos e caminhões com especialistas
         </p>
         
-        <Button
-          size="lg"
-          className="bg-accent hover:bg-accent/90 text-white shadow-xl text-base md:text-lg px-6 md:px-8 w-full sm:w-auto"
-          onClick={() => {
-            window.open(
-              "https://wa.me/5547989165481?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20consórcio.",
-              "_blank"
-            );
-          }}
-        >
-          <Phone className="mr-2 w-5 h-5" />
-          Falar com Consultor Agora
-        </Button>
+        <div className="flex justify-center">
+          <Button
+            size="lg"
+            className="bg-accent hover:bg-accent/90 text-white shadow-xl text-base md:text-lg px-6 md:px-8 w-full sm:w-auto"
+            onClick={() => {
+              window.open(
+                "https://wa.me/5547989165481?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20consórcio.",
+                "_blank"
+              );
+            }}
+          >
+            <Phone className="mr-2 w-5 h-5" />
+            Falar com Consultor Agora
+          </Button>
+        </div>
       </div>
     </section>
   );
