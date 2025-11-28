@@ -70,6 +70,17 @@ const Footer = () => {
           <p className="text-center text-white/60 text-sm">
             Desenvolvido com tecnologia e inovação para oferecer a melhor experiência em consórcios.
           </p>
+          <p className="text-center text-white/40 text-xs mt-3">
+            Developed by{" "}
+            <a 
+              href="https://davisantiagocode-solutions.web.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white/60 transition-colors underline decoration-dotted"
+            >
+              Davis Santiago Code Solutions
+            </a>
+          </p>
         </div>
       </div>
     </footer>
