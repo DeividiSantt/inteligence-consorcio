@@ -173,6 +173,18 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        
+        {/* Developer Watermark */}
+        <div className="mt-12 text-center">
+          <a 
+            href="https://davisantiagocode-solutions.web.app" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors border border-border rounded-full px-4 py-2 bg-card shadow-sm"
+          >
+            Website by Davi Santiago Code Solutions
+          </a>
+        </div>
       </div>
     </section>
   );

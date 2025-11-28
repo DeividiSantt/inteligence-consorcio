@@ -78,7 +78,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-white/60 transition-colors underline decoration-dotted"
             >
-              Davis Santiago Code Solutions
+              Davi Santiago Code Solutions
             </a>
           </p>
         </div>

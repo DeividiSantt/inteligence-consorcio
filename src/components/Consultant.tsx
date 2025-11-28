@@ -93,6 +93,18 @@ const Consultant = () => {
                   Enviar E-mail
                 </Button>
               </div>
+              
+              {/* Developer Watermark */}
+              <div className="text-center pt-4">
+                <a 
+                  href="https://davisantiagocode-solutions.web.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/70 hover:text-white transition-colors underline"
+                >
+                  Site by Davi Santiago Code Solutions
+                </a>
+              </div>
             </div>
           </div>
         </div>
