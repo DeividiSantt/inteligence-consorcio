@@ -67,6 +67,18 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Developer Watermark */}
+      <div className="mt-8 text-center">
+        <a 
+          href="https://davisantiagocode-solutions.web.app" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-block text-sm text-white/60 hover:text-white/80 transition-colors bg-white/10 backdrop-blur-sm rounded-full px-4 py-2"
+        >
+          Developed by Davi Santiago Code Solutions
+        </a>
+      </div>
     </section>
   );
 };
